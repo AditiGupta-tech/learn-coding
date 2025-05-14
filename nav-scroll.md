@@ -22,6 +22,7 @@ How this works?
   scroll-behavior: smooth;
 }
 The above CSS code snippet is used to make the scrolling smooth. Feel free to ignore this if you want instant scrolling.
+Add this code in your css file.
 
 I hope you found this helpful.
 Looking forward to drop more such practice lessons.
