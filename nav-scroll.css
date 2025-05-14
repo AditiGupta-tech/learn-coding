@@ -1,0 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navOpts {
+  text-decoration: none;
+  color: rgb(89, 0, 255);
+}
