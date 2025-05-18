@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle Links</title>
+  <link rel="stylesheet" href="click-button-options.css">
+</head>
+<style>
+  #linkContainer {
+      display: none;
+      margin-top: 10px;
+      flex-direction: column;
+    }
+
+    #linkContainer a {
+      margin: 5px 0;
+      color: blue;
+      text-decoration: none;
+    }
+
+    #linkContainer a:hover {
+      text-decoration: underline;
+    }
+</style>
+<body>
+
+  <button onclick="showOpts()">Show Options</button>
+
+  <div id="linkContainer">
+    <a href="https://example.com/1" target="_blank">Option 1</a>
+    <a href="https://example.com/2" target="_blank">Option 2</a>
+    <a href="https://example.com/3" target="_blank">Option 3</a>
+  </div>
+
+  <script>
+    function showOpts() {
+      const container = document.getElementById('linkContainer');
+      container.style.display = (container.style.display === 'none' || container.style.display === '') 
+        ? 'flex' 
+        : 'none';
+    }
+  </script>
+
+</body>
+</html>
