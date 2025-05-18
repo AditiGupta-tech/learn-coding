@@ -5,8 +5,8 @@
   <title>Toggle Links</title>
   <link rel="stylesheet" href="click-button-options.css">
 </head>
-<style>
-  #linkContainer {
+<style>   
+  #linkContainer {  
       display: none;
       margin-top: 10px;
       flex-direction: column;
@@ -32,12 +32,10 @@
     <a href="https://example.com/3" target="_blank">Option 3</a>
   </div>
 
-  <script>
+  <script> //function to handle options display
     function showOpts() {
       const container = document.getElementById('linkContainer');
-      container.style.display = (container.style.display === 'none' || container.style.display === '') 
-        ? 'flex' 
-        : 'none';
+      container.style.display = (container.style.display === 'none' || container.style.display === '') ? 'flex' : 'none';
     }
   </script>
 
